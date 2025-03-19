@@ -48,6 +48,7 @@ class SpeechModule:
             return query.lower()
         except Exception as e:
             print("Say that again please...")
+
             return "None"
         
 #_name_ is a built-in variable which evaluates to the name of the current module.
@@ -56,5 +57,9 @@ if __name__ == "__main__":
     sp.speak("Hello Aashi")
     sp.wish_me()
     sp.take_command()
+
+# python -m venv virtualenvironment_name---->python -m venv myenv
+#myenv\scripts\activate
+
 
 
