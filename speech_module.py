@@ -54,7 +54,7 @@ class SpeechModule:
 #_name_ is a built-in variable which evaluates to the name of the current module.
 if __name__ == "__main__":
     sp = SpeechModule()
-    sp.speak("Hello Aashi")
+    sp.speak("Hello Aashi how are you! hope you are doing well")
     sp.wish_me()
     sp.take_command()
 
