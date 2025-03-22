@@ -51,7 +51,7 @@ class Taskmodule:
             server.strattls() # this is used to send data between server and client
             server.login(Email, to, content)
             self.speech_module.speak("Email has been sent successfully")
-        except:
+        except Exception as e:
             print(e)
             self.speech_module.speak("Sorry, I could not send the email")
 if __name__=="__main__":
@@ -67,4 +67,11 @@ if __name__=="__main__":
 
     # testing the open_code method
     #test_obj.open_code("D:\\Python_Class\\python\\loops.ipynb")
-    test_obj.open_code("D:\\Python_Class\\Python Project\\mymusic.mp3")
+
+    #test_obj.open_code("D:\\Python_Class\\Python Project\\mymusic.mp3")
+
+    #test_obj.tell_time()
+
+    test_obj.search_wikipedia("python programming")
+    test_obj.search_wikipedia("virat kohli")
+    test_obj.send_email("202401070197@mitaoe.ac.in","prakashKumarg2427@gmail.com")
