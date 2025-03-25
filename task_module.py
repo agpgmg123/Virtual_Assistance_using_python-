@@ -36,7 +36,7 @@ class Taskmodule:
             self.speech_module.speak("Soory, I could not find any information on wikipedia")
     def play_music(self, music_dir):
         if os.path.exists(music_dir):
-            songs = [song for song in os.listdir(music_dir) if song.endswith("mp3")]
+            songs = [song for song in os.listdir(music_dir) if song.endswith(".mp3")]
             if songs:
                 song_to_play = random.choice(songs)
                 os.startfile(os.path.join(music_dir, song_to_play))
@@ -68,8 +68,7 @@ if __name__=="__main__":
     # testing the open_code method
     #test_obj.open_code("D:\\Python_Class\\python\\loops.ipynb")
 
-    #test_obj.open_code("D:\\Python_Class\\Python Project\\mymusic.mp3")
-
+    #test_obj.open_code("")D:\\Python_Class\\Python Project\\mymusic.mp3
     #test_obj.tell_time()
 
     test_obj.search_wikipedia("python programming")
